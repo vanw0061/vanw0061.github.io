@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- Assignment 2 - LIB2024 -->
 <!-- Tell browser that this is an HTM5 document -->
 <!DOCTYPE html>
@@ -177,3 +178,184 @@
 </html>
 
 
+=======
+<!-- Assignment 2 - LIB2024 -->
+<!-- Tell browser that this is an HTM5 document -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Making tab indicate that this is assignment 2 -->
+	<title>Assignment 2</title>
+	<!-- Tell browser i'm using UTF-8 characterset -->
+    <!-- The main purpose of using metatags is to help tell web based tools what a website is on the subject of. -->
+	<meta charset="utf-8">
+	<!-- Determine Search Engine Optimization of my webpage -->
+	<meta name="description" content="My 2nd assignment about tables and images">
+	<!-- Assign meta keywords so site crawlers will find my site -->
+	<meta name="keywords" content="HTML, HTML5, Tags, Tables, Images, LIB2024, Jonas van Walraven">
+	<!-- Tell browsers to not index this page and to not follow this page -->
+	<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+	<!-- Create heading content -->
+	<header>
+		<!-- Create title -->
+		<h1>Assignment 2</h1>
+	</header>
+	<!-- This is the main section of my page. -->
+	<main>
+		<section>
+			<h2>Employee List</h2>
+			<!-- Create employee table -->
+			<table border="1">
+		       <thead>
+		            <!-- Add tr tag for 1st row -->
+                    <!-- <tr> indentifies a table row -->
+		            <tr>
+		                <!-- use th tag to create 1st row of table -->
+                        <!-- <th> identifies a specific table cell as leader of a group -->
+		                <th>Id</th>
+		                <th>Name</th>
+		                <th>email</th>
+		            </tr>
+		        </thead>
+	        <!-- now add tbody tag for all content in tbody -->
+                <tbody>
+                    <tr>
+                        <!-- add data to table with td tags -->
+                        <td>1</td>
+                        <td>John</td>
+                        <td>john@fakemail.com</td>
+                    </tr>
+                    <!-- We can have multiple rows of content in the body. -->
+                    <tr>
+                        <!-- The number of td stays the same as before. -->
+                        <!-- <td> clarifies a table cell -->
+                        <td>2</td>
+                        <td>sam</td>
+                        <td>sam@fakemail.com</td>    
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Bob</td>
+                        <td>bob@fakemail.com</td>    
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Jack</td>
+                        <td>jack@fakemail.com</td>    
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>rob</td>
+                        <td>Rob@fakemail.com</td>    
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                        <!-- The colspan figures out how many columns a cell could reach. -->
+                        <!-- The cells in a table can spread across more than one row or column. -->
+                            <td colspan="3">
+                                All of the above are Division Heads
+                            </td>
+                        </tr>
+                    </tfoot>
+ 			</table>
+		</section>
+
+    	<section>
+    		<h2>Animals</h2>
+             <!-- <article> tag is used to represent enclosed writing in a document -->
+             <!-- The internal element of an article is entitled to an article related to the external element when they are placed inside of one another -->
+    		<article>
+                <!-- img tag is used to add images on a record -->
+                <!-- An example of an attribute of img element is src tag which is used to indentify the image's location. -->
+                <!-- "img" is described as a related folder of index.html -->
+                <!-- We use "/" in order to get to the img folder. -->
+                <!-- Image-1 is used in order to get the image to be clearly described. -->
+                <!-- .jpg is used to represent the image's file -->
+                <!-- The attribute of the width is used to identify the image's width. -->
+                <!-- The attribute of the height is used to identify the image's height. -->
+                <!-- img is not a block level element -->
+                <!-- figure is a tag that is used to get images to show up on your screen -->
+                <!-- figure is also used to give images correct headings -->
+                <!-- In order to clearly identify the contents of an image, we use the alt attribute. --> 
+    			<figure>
+					<img src="img/elephant.jpg" alt="Image 1" width="300"  height="200">
+                    <!-- In order to clearly identify the contents of an image, we use the alt attribute. --> 
+                    <!-- <img> is used to represent an given image on HTML -->
+                    <!-- <figcaption> is entitled to a heading that describes the rest of the subjects -->
+                    <!-- The body, its heading and subjects are all described as one entity. -->
+    				<figcaption>This is an Elephant.</figcaption>
+    			</figure>
+				<figure>
+					<img src="img/lion.jpg" alt="Image 2" width="300"  height="200">
+    				<figcaption>This is a lion.</figcaption>
+    			</figure>
+                <figure>
+					<img src="img/snake.jpg" alt="Image 3" width="300"  height="200">
+    				<figcaption>This is a snake.</figcaption>
+    			</figure>
+				<figure>
+					<img src="img/whale.jpg" alt="Image 4" width="300"  height="200">
+    				<figcaption>This is a Whale.</figcaption>
+    			</figure>
+    			<figure>
+					<img src="img/hawk.jpg" alt="Image 5" width="300"  height="200">
+    				<figcaption>This is a Hawk.</figcaption>
+    			</figure>
+			</article>
+		</section>
+
+            <section>
+            	<h2>HTML Entities</h2>
+                <!-- HTML entities begin with the & symbol and end with the ; symbol. -->
+                <!-- HTML entities are used to show characters that can be clarified as code on HTML. -->
+                <!-- The name of an entity is really easy to remember. -->
+                <!-- Not all entity names are assisted by a program but the assistance of entity number is excellent. -->
+            	<article>
+            		<p>Non Breaking Space: &#32;</p>
+            		<p>ampersand: &#38;</p>
+            		<p>Pound: &#163;</p>
+                    <p>Copyright: &#169;</p>
+            	</article>
+            </section>
+
+        <section>
+            <h2>Special Tags :</h2>
+            <!-- Special tags are used to control of how a website's pages will show up on the screen. -->
+                <dl> 
+                        <dt>Coffee</dt> 
+                        <!-- <dd> is for the description -->
+                        <dd>black hot drink</dd>
+                        <!-- <dt> is for the names and terms --> 
+                        <dt>Milk</dt> 
+                        <dd>white cold drink</dd> 
+                        <!-- <abbr> is entitled to abbreviations -->
+                        <!-- If the <abbr> tag is shown, the heading must include an important explanation. -->
+                        <p><abbr title="HTML">HTML</abbr ></p>
+                        <p><abbr title="CSS">CSS</abbr ></p>
+                </dl>
+
+                <article class="special-tag" id="details">
+                    <details>
+                    <!-- <summary> tag clarifies a title for the <details> element -->
+                    <!-- The title can be clicked in order to bury or expose the facts. -->  
+                       <summary>What is a mobile Phone?</summary>
+                       <p>A mobile phone, cell phone or hand phone, sometimes shortened to simply mobile, cell or just phone, is a portable telephone that can make and receive calls over a radio frequency link while the user is moving within a telephone service area.</p>
+                    </details>
+                </article>
+        </section>	    	
+</body>
+
+    <footer>
+        <!-- Hidden comments are created by starting with an exclaimation point, a less than symbol and two slashes. -->
+        <!-- Hidden comments are ended by two slashes and a greater than symbol. -->
+        <!-- These comments are helpful to those who can understand the code more. -->
+        <!-- Comments can sometimes be described as a simple note which means that it doesn't get shown by the program. -->  
+        <h2>Hidden comment:</h2>
+    </footer>
+</html>
+
+
+>>>>>>> 15642083914a9d2b78a2e9a9c82ece23defc246a
