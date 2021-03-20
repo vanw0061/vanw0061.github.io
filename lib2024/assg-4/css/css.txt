@@ -1,0 +1,265 @@
+ /*http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* META INFORMATION ************************************************************************************
+	Color Pallete and FONT info
+
+	De York (greenish) : #80C080; #6DCFF6;
+	Blue for buttons: #6DCFF6;
+
+	FONT 4 tITLES = LATO 400
+*******************************************************************************************************/
+/* resetting browser defaults *************************************************************************/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers *********************************************************/
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* changing font to type closest to mock up that i could find in google fonts ***************************/
+html {
+	font-family: 'Lato', sans-serif;
+}
+/* boldening and sizing main titles like mock up ********************************************************/
+h1 {
+	font-weight: bold;
+	font-size: 4rem;
+}
+/* boldening and sizing other title like mock up********************************************************/
+h2, h3{
+	font-weight: bold;
+	font-size: 2rem;
+}
+/* control appearance of all text in page ***************************************************************/
+.text{
+	font-size: 1.5rem;
+	text-decoration: none;
+}
+/*CSS clearfix******************************************************************************************/
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+/**************************************************************************************************************
+		MOBILE FIRST
+*************************************************************************************************************/
+/*Make sure containers in are set to 100% width to achieve Fluid Layout **************************************/
+.col-main, img {
+	width:100%;
+}
+/* Header styles ********************************************************************************************/ 
+header {
+	background: #80C080;
+}
+.header1 {
+	float: left;
+	width:250px;
+	padding: 15px;
+	box-sizing: border-box;
+}
+.header2 {
+	height: 200px;
+	float: left;
+	width:calc(100% - 300px);
+	padding: 60px;
+	box-sizing: border-box;
+}
+/* create background for main section.  got this from www.toptal.com/designers/subtlepatterns  ************/
+main {
+	background-image: url("../img/circles-light.png");
+}
+.ham {
+	float: right;
+	background: #BBDEFB;
+}
+.main-nav a {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 15px;
+}
+.desktop-nav {
+	width: 100%;
+}
+.desktop-nav ul {
+	width:100%;
+	text-align: center;
+}
+.desktop-nav li {
+	box-sizing: border-box;
+	width: 18%;
+	display: inline-block;
+	margin: 5px 0px 15px 70px;
+	float: left;
+	border: none;
+	border-radius: 10px;
+	padding: 0.5em 2em;
+	background: #6DCFF6;
+	text-align: center;
+}
+.mobile-nav {
+	width:100%;
+	clear: both;
+}
+
+.mobile-nav-container {
+	position: relative;
+	clear: both;
+}
+.mobile-nav li {
+	box-sizing: border-box;
+	width:100%;
+	padding: 10px;
+	background: #FFEB3B;
+	border-bottom: 2px solid #121212;
+}
+/*main content styles**************************************************************************************/
+.site-content {
+	padding: 15px;
+	width:100%;
+	box-sizing: border-box;
+}
+.site-sidebar {
+	padding: 15px;
+	width: 100%;
+	box-sizing: border-box;
+}
+figcaption {
+  color: black;
+  font-style: normal;
+  padding: 2px;
+  text-align: center;
+}
+/*footer styles********************************************************************************************/
+footer {
+	height: 100px;
+	background: #80C080;
+	width: 100%;
+	box-sizing: border-box;
+}
+.footer div{
+	display: inline;
+}
+.footer p{
+	display: inline;
+}
+.footer-a {
+	float: left;
+	padding: 38px;
+	box-sizing: border-box;
+	font-size: 16pt;
+}
+.footer-b {
+	box-sizing: border-box;
+	float: right;
+	padding: 15px;
+}
+.footer2 {
+	height: 100px;
+	float: right;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+/*This media query will only target the tablet size*********************************************************/
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	header {
+		background: #FFEB3B;
+	}
+}
+/*This media query targets, tablet and above****************************************************************/
+@media only screen and (min-width: 768px) {
+	
+	/*header styles*/
+
+	/*the following css is used to restrict the content beyond 1280px*/
+	/*This is to make sure the main content is in the readbable area for large screen sizes*/
+	header, main, footer {
+
+		max-width: 1280px;
+		margin: 0 auto;
+
+	}
+
+	.desktop-nav {
+		display: block;
+	}
+
+	.mobile-nav {
+		display: none;
+	}
+
+	.ham {
+		display: none;
+	}
+
+	.site-content {
+		float: left;
+		width: 70%;
+		box-sizing: border-box;
+	}
+
+	.site-sidebar {
+		float: left;
+		width: 30%;
+		box-sizing: border-box;
+	}
+
+	.image-gallery .img-slide {
+		width: 33%;
+		padding: 10px;
+		box-sizing: border-box;
+		float: left;
+
+	}
+
+	.col-footer {
+		width: 31%;
+		box-sizing: border-box;
+		margin: 0 1%;
+		padding: 10px;
+		float: left;
+	}
+}
+
+/*Desktop First Media Query*/
+/* this is in case you have a lot of complex styles for desktop and do not want to change the styles for desktop layout*/
+/*These media queries will target the screen sizes for smaller devices*/
+/*The following media query targets the screen sizes that are less than 768px*/
+@media only screen and (max-width: 768px) {
+	footer {
+		background: #FFEB3B;
+	}
+}
