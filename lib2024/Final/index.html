@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///C:/Users/jojoa/Downloads/index%20(2).html -->
+<html lang="en-ca"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Final</title>	
+	<link rel="stylesheet" type="text/css" href="file:///C:/Users/jojoa/Downloads/styles/form_validation.css">
+</head>
+<body>
+	<div class="overlay-container loader-container">
+	<!-- The loader is known for getting classes loaded. -->
+		<div class="loader"></div>
+	</div>
+
+	<!-- The main starts here. -->
+	<main class="main clearfix" id="main">
+	
+			<br>
+			<section class="form-value-transfer clearfix">
+				<h2>EDIT PROFILE</h2>
+				<form id="form" action="file:///C:/Users/jojoa/Downloads/submit.php" method="post">
+					<p>
+						<label for="name">Name</label>
+						<input type="text" required="" name="name" id="name">
+						<!-- The name attribute is used to identify a name for an element on HTML. -->
+						<!-- For a form element, the name attribute is referenced. -->
+					</p>
+					<p>
+						<label for="email">Email</label>
+						<input type="email" required="" name="email" id="email">
+						<!-- The input gets saved and is sent to the user. -->
+					    <!-- Value attributes are not temporary. -->
+					    <!-- HTML5 accepts any input given in a specific document such as email. -->
+					    <!-- In order for it to be acceptable, it must contain a @ symbol. -->
+					    <!-- The readonly attribute makes the field not contain any edits. -->
+					</p>
+					<p>
+						<label for="address">Address</label>
+						<input type="text" required="" name="address" id="address">
+						<!-- The address attribute is used to identify the information for the owner of a specific document. -->
+						<!-- Text in the address element gets contributed in a specific kind of font called italic. -->
+						<!-- A line break always happens before and after the <address> element. -->
+					</p>
+					<p>
+						<label for="city">City</label>
+						<input type="text" required="" name="city" id="city">
+						<!-- The <city> tag is used to figure out which city a specific person lives in. -->
+					    <!-- Examples of this are Ottawa, Toronto and Montreal. -->
+					</p>
+					<p>
+						<label for="province">Province</label>
+						<!-- Dropdown boxes are used to pick one of the many different options. -->
+	                	<!-- An example of this would be selecting the province that you live in. -->
+						<select name="province" id="province">
+							<option value="NL">Newfoundland and Labrador</option>
+							<option value="PE">Prince Edward Island</option>
+							<option value="NS">Nova Scotia</option>
+							<option value="NB">New Brunswick</option>
+							<option value="QC">Quebec</option>
+							<option value="ON">Ontario</option>
+							<option value="MB">Manitoba</option>
+							<option value="AB">Alberta</option>
+							<option value="BC">British Columbia</option>
+							<option value="YT">Yukon</option>
+							<option value="NT">Northwest Territories</option>
+							<option value="NU">Nunavut</option>							
+						</select>
+					</p>
+					<p>
+						<label for="pc">Postal Code</label>
+						<!-- This is used to enter your postal code. -->
+						<input type="text" required="" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" value="" name="pc" id="pc" placeholder="A0A 0A0">
+					</p>
+					<button type="submit">Submit</button>
+				</form>
+
+				<div id="results">
+					<h2>PROFILE INFO</h2>
+					<!-- This list consists of the different attributes in an html profile. -->
+					<p><span id="name_result"></span></p>
+					<p><span id="email_result"></span></p>
+					<p><a id="address_result"></a></p>
+					<p><a id="city_result"></a></p>
+					<p><a id="province_result"></a></p>
+					<p><a id="pc_result"></a></p>
+				</div>
+			</section>
+	</main>
+	<!-- The main ends here. -->
+
+	<!-- include jQuery -->
+	<script src="./Final_files/jquery.min.js.download"></script>
+	<!-- Link to java script file -->
+
+</body></html>
